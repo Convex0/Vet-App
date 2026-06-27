@@ -5,12 +5,17 @@
 [ext_resource type="FontFile" uid="uid://cf74bv42lxuyd" path="res://Fonts/Prompt-SemiBold.ttf" id="3_6bp64"]
 [ext_resource type="StyleBox" uid="uid://dd2qqqmfhm5pm" path="res://Styles/Examine.tres" id="4_jjvhh"]
 [ext_resource type="StyleBox" uid="uid://dgss4ie8v30ww" path="res://Styles/Diagnostics.tres" id="4_kry3j"]
+[ext_resource type="StyleBox" uid="uid://ba2j6uo7drywh" path="res://Styles/History.tres" id="5_344ge"]
 [ext_resource type="StyleBox" uid="uid://4wdd8aeis775" path="res://Styles/Treatment.tres" id="5_kry3j"]
 [ext_resource type="Texture2D" uid="uid://npyuc6dix2lb" path="res://Assets/DogProfile.png" id="6_21xkr"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hptm8"]
-bg_color = Color(0.04876782, 0.17419371, 0.4364273, 0.80784315)
-border_color = Color(0, 0, 0, 1)
+bg_color = Color(0.06549622, 0.21296045, 0.5216685, 0.80784315)
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+border_color = Color(0.35686275, 0.5568628, 0.9490196, 1)
 border_blend = true
 corner_radius_top_left = 25
 corner_radius_top_right = 25
@@ -76,16 +81,33 @@ border_width_right = 6
 border_width_bottom = 6
 border_color = Color(0.015686275, 0.8235294, 0.4392157, 1)
 border_blend = true
-corner_radius_top_left = 15
-corner_radius_top_right = 15
-corner_radius_bottom_right = 15
-corner_radius_bottom_left = 15
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
 shadow_size = 5
 anti_aliasing = false
 anti_aliasing_size = 4.0
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kry3j"]
-bg_color = Color(0.05574856, 0.27704054, 0.67939204, 1)
+bg_color = Color(0.042634442, 0.24453694, 0.60533464, 1)
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+border_color = Color(0.39761153, 0.6006039, 0.9999953, 1)
+border_blend = true
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+shadow_color = Color(0, 0, 0, 0.74509805)
+shadow_size = 6
+anti_aliasing = false
+anti_aliasing_size = 4.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6iyac"]
+bg_color = Color(0.07058824, 0.3137255, 0.75686276, 1)
 border_width_left = 6
 border_width_top = 6
 border_width_right = 6
@@ -102,34 +124,68 @@ anti_aliasing = false
 anti_aliasing_size = 4.0
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6bp64"]
-bg_color = Color(0.68319786, 0.030651081, 0.13481939, 1)
+bg_color = Color(0.6434917, 0.02713057, 0.12329743, 1)
 border_width_left = 6
 border_width_top = 6
 border_width_right = 6
 border_width_bottom = 6
 border_color = Color(1, 0.47762418, 0.41198173, 1)
 border_blend = true
-corner_radius_top_left = 15
-corner_radius_top_right = 15
-corner_radius_bottom_right = 15
-corner_radius_bottom_left = 15
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+shadow_color = Color(0, 0, 0, 0.74509805)
+shadow_size = 6
+anti_aliasing = false
+anti_aliasing_size = 4.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d1ilt"]
+bg_color = Color(0.7970316, 0.045164034, 0.16664279, 1)
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+border_color = Color(1, 0.47762418, 0.41198173, 1)
+border_blend = true
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+shadow_color = Color(0, 0, 0, 0.74509805)
+shadow_size = 6
+anti_aliasing = false
+anti_aliasing_size = 4.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_344ge"]
+bg_color = Color(0.93784046, 0.53911924, 0.20688412, 1)
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+border_color = Color(0.985007, 0.6737258, 0.4489314, 1)
+border_blend = true
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
 shadow_color = Color(0, 0, 0, 0.74509805)
 shadow_size = 6
 anti_aliasing = false
 anti_aliasing_size = 4.0
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ynf5e"]
-bg_color = Color(0.019198924, 0.16309059, 0.42627293, 1)
+bg_color = Color(0.8235294, 0.4509804, 0.11372549, 1)
 border_width_left = 6
 border_width_top = 6
 border_width_right = 6
 border_width_bottom = 6
-border_color = Color(0.39761153, 0.6006039, 0.9999953, 1)
+border_color = Color(0.985007, 0.6737258, 0.4489314, 1)
 border_blend = true
-corner_radius_top_left = 15
-corner_radius_top_right = 15
-corner_radius_bottom_right = 15
-corner_radius_bottom_left = 15
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
 shadow_color = Color(0, 0, 0, 0.74509805)
 shadow_size = 6
 anti_aliasing = false
@@ -166,7 +222,6 @@ grow_vertical = 2
 size_flags_horizontal = 4
 theme_override_styles/panel = SubResource("StyleBoxFlat_hptm8")
 metadata/_edit_use_anchors_ = true
-metadata/_edit_lock_ = true
 
 [node name="NameLabel" type="Label" parent="UI/PatientInfos" unique_id=855131342]
 layout_mode = 1
@@ -187,6 +242,7 @@ theme_override_font_sizes/font_size = 18
 text = "Rockie"
 label_settings = SubResource("LabelSettings_344ge")
 metadata/_edit_use_anchors_ = true
+metadata/_edit_lock_ = true
 
 [node name="Name" type="Label" parent="UI/PatientInfos/NameLabel" unique_id=1129137081]
 layout_mode = 1
@@ -201,6 +257,7 @@ offset_right = 28.016006
 offset_bottom = 17.008
 text = "Name:"
 label_settings = SubResource("LabelSettings_6bp64")
+metadata/_edit_use_anchors_ = true
 
 [node name="AgeLabel" type="Label" parent="UI/PatientInfos" unique_id=124171440]
 layout_mode = 1
@@ -218,6 +275,7 @@ grow_vertical = 2
 text = "5 Years/Male, Boxer"
 label_settings = SubResource("LabelSettings_ynf5e")
 metadata/_edit_use_anchors_ = true
+metadata/_edit_lock_ = true
 
 [node name="Age" type="Label" parent="UI/PatientInfos/AgeLabel" unique_id=959301803]
 layout_mode = 1
@@ -253,6 +311,7 @@ grow_vertical = 2
 text = "Vomiting, Distended, Abdomen, Lethargy"
 label_settings = SubResource("LabelSettings_hptm8")
 metadata/_edit_use_anchors_ = true
+metadata/_edit_lock_ = true
 
 [node name="Symptoms" type="Label" parent="UI/PatientInfos/SymptomsLabel" unique_id=1537022878]
 layout_mode = 1
@@ -269,8 +328,9 @@ grow_horizontal = 2
 grow_vertical = 2
 text = "Symptoms:"
 label_settings = SubResource("LabelSettings_6iyac")
+metadata/_edit_use_anchors_ = true
 
-[node name="TextureRect" type="TextureRect" parent="UI/PatientInfos" unique_id=1134309116]
+[node name="Portrait" type="TextureRect" parent="UI/PatientInfos" unique_id=1134309116]
 custom_minimum_size = Vector2(60, 60)
 layout_mode = 1
 anchors_preset = -1
@@ -291,6 +351,7 @@ texture = ExtResource("6_21xkr")
 expand_mode = 1
 stretch_mode = 5
 metadata/_edit_use_anchors_ = true
+metadata/_edit_lock_ = true
 
 [node name="HistoryButton" type="Button" parent="UI" unique_id=1779899105]
 anchors_preset = -1
@@ -309,10 +370,9 @@ theme_override_fonts/font = ExtResource("3_6bp64")
 theme_override_font_sizes/font_size = 18
 theme_override_styles/normal = SubResource("StyleBoxFlat_8gbba")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_21xkr")
-theme_override_styles/hover = ExtResource("5_kry3j")
+theme_override_styles/hover = ExtResource("5_344ge")
 text = "HISTORY"
 metadata/_edit_use_anchors_ = true
-metadata/_edit_lock_ = true
 
 [node name="ExamButton" type="Button" parent="UI" unique_id=1180044727]
 anchors_preset = -1
@@ -330,10 +390,9 @@ theme_override_fonts/font = ExtResource("3_6bp64")
 theme_override_font_sizes/font_size = 18
 theme_override_styles/normal = ExtResource("4_jjvhh")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_kry3j")
-theme_override_styles/hover = ExtResource("5_kry3j")
+theme_override_styles/hover = SubResource("StyleBoxFlat_6iyac")
 text = "EXAM"
 metadata/_edit_use_anchors_ = true
-metadata/_edit_lock_ = true
 
 [node name="DiagnosticsButton" type="Button" parent="UI" unique_id=1674663872]
 anchors_preset = -1
@@ -351,10 +410,9 @@ theme_override_fonts/font = ExtResource("3_6bp64")
 theme_override_font_sizes/font_size = 18
 theme_override_styles/normal = ExtResource("4_kry3j")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_6bp64")
-theme_override_styles/hover = ExtResource("5_kry3j")
+theme_override_styles/hover = SubResource("StyleBoxFlat_d1ilt")
 text = "DIAGNOSTICS"
 metadata/_edit_use_anchors_ = true
-metadata/_edit_lock_ = true
 
 [node name="TreatmentButton" type="Button" parent="UI" unique_id=41395588]
 anchors_preset = -1
@@ -371,8 +429,7 @@ theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("3_6bp64")
 theme_override_font_sizes/font_size = 18
 theme_override_styles/normal = ExtResource("5_kry3j")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_ynf5e")
-theme_override_styles/hover = ExtResource("5_kry3j")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_344ge")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ynf5e")
 text = "TREATMENT"
 metadata/_edit_use_anchors_ = true
-metadata/_edit_lock_ = true
