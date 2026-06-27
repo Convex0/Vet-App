@@ -1,16 +1,222 @@
 [gd_scene format=3 uid="uid://dyas40230ukyn"]
 
-[ext_resource type="Texture2D" uid="uid://cjnpwqf7ve7pl" path="res://Assets/IMG_20260627_033944.png" id="1_bo1nx"]
+[ext_resource type="Texture2D" uid="uid://cjnpwqf7ve7pl" path="res://Assets/ExaminationRoom.png" id="1_bo1nx"]
+[ext_resource type="Texture2D" uid="uid://cd2wrimmamr1l" path="res://Assets/PatientDog.png" id="2_bo1nx"]
+[ext_resource type="StyleBox" uid="uid://dd2qqqmfhm5pm" path="res://Styles/Examine.tres" id="4_jjvhh"]
+[ext_resource type="StyleBox" uid="uid://dgss4ie8v30ww" path="res://Styles/Diagnostics.tres" id="4_kry3j"]
+[ext_resource type="StyleBox" uid="uid://4wdd8aeis775" path="res://Styles/Treatment.tres" id="5_kry3j"]
+
+[sub_resource type="Theme" id="Theme_bo1nx"]
+
+[sub_resource type="SystemFont" id="SystemFont_bo1nx"]
+
+[sub_resource type="FontVariation" id="FontVariation_8gbba"]
+base_font = SubResource("SystemFont_bo1nx")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8gbba"]
+bg_color = Color(0.1408068, 0.5061146, 0.18257496, 1)
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+border_color = Color(0, 0.86635333, 0.47518116, 1)
+border_blend = true
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+shadow_size = 5
+anti_aliasing = false
+anti_aliasing_size = 4.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_21xkr"]
+bg_color = Color(0.12116062, 0.4433356, 0.15879688, 1)
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+border_color = Color(0.015686275, 0.8235294, 0.4392157, 1)
+border_blend = true
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+shadow_size = 5
+anti_aliasing = false
+anti_aliasing_size = 4.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jjvhh"]
+bg_color = Color(0.14117648, 0.5058824, 0.18431373, 1)
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+border_color = Color(0.015686275, 0.8235294, 0.4392157, 1)
+border_blend = true
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+shadow_size = 5
+anti_aliasing = false
+anti_aliasing_size = 4.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kry3j"]
+bg_color = Color(0.05574856, 0.27704054, 0.67939204, 1)
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+border_color = Color(0.39761153, 0.6006039, 0.9999953, 1)
+border_blend = true
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+shadow_color = Color(0, 0, 0, 0.74509805)
+shadow_size = 6
+anti_aliasing = false
+anti_aliasing_size = 4.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6bp64"]
+bg_color = Color(0.68319786, 0.030651081, 0.13481939, 1)
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+border_color = Color(1, 0.47762418, 0.41198173, 1)
+border_blend = true
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+shadow_color = Color(0, 0, 0, 0.74509805)
+shadow_size = 6
+anti_aliasing = false
+anti_aliasing_size = 4.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_344ge"]
+bg_color = Color(0.79607844, 0.043137256, 0.16470589, 1)
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+border_color = Color(0.9764706, 0.42352942, 0.38039216, 1)
+border_blend = true
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+shadow_color = Color(0, 0, 0, 0.74509805)
+shadow_size = 6
+anti_aliasing = false
+anti_aliasing_size = 4.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ynf5e"]
+bg_color = Color(0.019198924, 0.16309059, 0.42627293, 1)
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+border_color = Color(0.39761153, 0.6006039, 0.9999953, 1)
+border_blend = true
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+shadow_color = Color(0, 0, 0, 0.74509805)
+shadow_size = 6
+anti_aliasing = false
+anti_aliasing_size = 4.0
 
 [node name="main" type="Node2D" unique_id=522453875]
 
 [node name="ExaminationRoom" type="Sprite2D" parent="." unique_id=1450719763]
 position = Vector2(688, 384)
 texture = ExtResource("1_bo1nx")
-metadata/_edit_group_ = true
+metadata/_edit_lock_ = true
 
-[node name="PatientDog" type="Sprite2D" parent="." unique_id=544491083]
-position = Vector2(632, 341.99997)
-scale = Vector2(0.5886363, 0.61296296)
+[node name="PatientDog" type="Sprite2D" parent="." unique_id=140973489]
+position = Vector2(588, 387)
+scale = Vector2(0.5419192, 0.5555556)
+texture = ExtResource("2_bo1nx")
+metadata/_edit_lock_ = true
 
 [node name="UI" type="CanvasLayer" parent="." unique_id=749731248]
+
+[node name="PatientInreacts" type="Panel" parent="UI" unique_id=1622764739]
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 335.0
+offset_bottom = 100.0
+
+[node name="PatientInfos" type="VBoxContainer" parent="UI/PatientInreacts" unique_id=324076245]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="NameLabel" type="Label" parent="UI/PatientInreacts/PatientInfos" unique_id=855131342]
+layout_mode = 2
+text = " Rockie"
+
+[node name="AgeLabel" type="Label" parent="UI/PatientInreacts/PatientInfos" unique_id=124171440]
+layout_mode = 2
+text = " 5 Years | Male, Boxer"
+
+[node name="SymptomsLabel" type="Label" parent="UI/PatientInreacts/PatientInfos" unique_id=1310608808]
+layout_mode = 2
+text = " Vomiting, Distended, Abdomen, Lethargy"
+
+[node name="HistoryButton" type="Button" parent="UI" unique_id=1779899105]
+offset_left = 70.0
+offset_top = 660.0
+offset_right = 200.0
+offset_bottom = 710.0
+theme = SubResource("Theme_bo1nx")
+theme_override_colors/font_color = Color(0.875, 0.875, 0.875, 1)
+theme_override_colors/font_focus_color = Color(0.8517688, 0.8517689, 0.8517693, 1)
+theme_override_fonts/font = SubResource("FontVariation_8gbba")
+theme_override_font_sizes/font_size = 18
+theme_override_styles/normal = SubResource("StyleBoxFlat_8gbba")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_21xkr")
+theme_override_styles/hover = SubResource("StyleBoxFlat_jjvhh")
+text = "HISTORY"
+
+[node name="ExamButton" type="Button" parent="UI" unique_id=1180044727]
+offset_left = 215.0
+offset_top = 660.0
+offset_right = 345.0
+offset_bottom = 710.0
+theme = SubResource("Theme_bo1nx")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 19
+theme_override_styles/normal = ExtResource("4_jjvhh")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_kry3j")
+theme_override_styles/hover = ExtResource("4_jjvhh")
+text = "EXAM"
+
+[node name="DiagnosticsButton" type="Button" parent="UI" unique_id=1674663872]
+offset_left = 360.0
+offset_top = 660.0
+offset_right = 490.0
+offset_bottom = 710.0
+theme = SubResource("Theme_bo1nx")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 18
+theme_override_styles/normal = ExtResource("4_kry3j")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_6bp64")
+theme_override_styles/hover = SubResource("StyleBoxFlat_344ge")
+text = "DIAGNOSTICS"
+
+[node name="TreatmentButton" type="Button" parent="UI" unique_id=41395588]
+offset_left = 506.0
+offset_top = 660.0
+offset_right = 636.0
+offset_bottom = 710.0
+theme = SubResource("Theme_bo1nx")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 18
+theme_override_styles/normal = ExtResource("5_kry3j")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ynf5e")
+theme_override_styles/hover = ExtResource("5_kry3j")
+text = "TREATMENT"

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dnwgpwf7ye6so"
-path="res://.godot/imported/1782094795320.png-08557015846fb0df7c3c910b8d89e198.ctex"
+uid="uid://cjnpwqf7ve7pl"
+path="res://.godot/imported/ExaminationRoom.png-a62f477e042e9e75e28446e42da51a34.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/1782094795320.png"
-dest_files=["res://.godot/imported/1782094795320.png-08557015846fb0df7c3c910b8d89e198.ctex"]
+source_file="res://Assets/ExaminationRoom.png"
+dest_files=["res://.godot/imported/ExaminationRoom.png-a62f477e042e9e75e28446e42da51a34.ctex"]
 
 [params]
 
