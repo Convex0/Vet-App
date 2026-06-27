@@ -7,12 +7,12 @@ if [ -z "$msg" ]; then
     exit 1
 fi
 
-timestamp=$(date "+%Y-%m-%d %H:%M:%S")
+timestamp=$(date "%H:%M")
 branch=$(git branch --show-current)
 
 git add .
 
-if ! git commit -m "$msg [$timestamp]"; then
+if ! git commit -m "$msg ($timestamp)"; then
     echo "Failed ❌"
     exit 1
 fi
