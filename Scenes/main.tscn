@@ -9,14 +9,35 @@
 [ext_resource type="StyleBox" uid="uid://4wdd8aeis775" path="res://Styles/Treatment.tres" id="5_kry3j"]
 [ext_resource type="Texture2D" uid="uid://npyuc6dix2lb" path="res://Assets/DogProfile.png" id="6_21xkr"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jkdf5"]
+bg_color = Color(0.67058825, 0.14901961, 0.13333334, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.9955804, 0.99558026, 0.99558026, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="LabelSettings" id="LabelSettings_fdnlq"]
+font = ExtResource("3_6bp64")
+font_size = 19
+shadow_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_jkdf5"]
+font = ExtResource("3_6bp64")
+font_size = 32
+shadow_color = Color(0, 0, 0, 1)
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hptm8"]
-bg_color = Color(0.06549622, 0.21296045, 0.5216685, 0.80784315)
-border_width_left = 6
-border_width_top = 6
-border_width_right = 6
-border_width_bottom = 6
-border_color = Color(0.35686275, 0.5568628, 0.9490196, 1)
-border_blend = true
+bg_color = Color(0.2, 0.3019608, 0.4627451, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(1, 1, 1, 1)
 corner_radius_top_left = 25
 corner_radius_top_right = 25
 corner_radius_bottom_right = 25
@@ -90,24 +111,24 @@ anti_aliasing = false
 anti_aliasing_size = 4.0
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kry3j"]
-bg_color = Color(0.042634442, 0.24453694, 0.60533464, 1)
+bg_color = Color(0.030611783, 0.20477417, 0.5198433, 1)
 border_width_left = 6
 border_width_top = 6
 border_width_right = 6
 border_width_bottom = 6
 border_color = Color(0.39761153, 0.6006039, 0.9999953, 1)
 border_blend = true
-corner_radius_top_left = 15
-corner_radius_top_right = 15
-corner_radius_bottom_right = 15
-corner_radius_bottom_left = 15
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
 shadow_color = Color(0, 0, 0, 0.74509805)
 shadow_size = 6
 anti_aliasing = false
 anti_aliasing_size = 4.0
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6iyac"]
-bg_color = Color(0.07058824, 0.3137255, 0.75686276, 1)
+bg_color = Color(0.07058824, 0.28235295, 0.56078434, 1)
 border_width_left = 6
 border_width_top = 6
 border_width_right = 6
@@ -158,7 +179,7 @@ anti_aliasing = false
 anti_aliasing_size = 4.0
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_344ge"]
-bg_color = Color(0.93784046, 0.53911924, 0.20688412, 1)
+bg_color = Color(0.5662595, 0.29744148, 0.047573343, 1)
 border_width_left = 6
 border_width_top = 6
 border_width_right = 6
@@ -191,6 +212,43 @@ shadow_size = 6
 anti_aliasing = false
 anti_aliasing_size = 4.0
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wsu2k"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_344ge"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fdnlq"]
+bg_color = Color(0.3106173, 0.31061706, 0.31061706, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+border_blend = true
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+expand_margin_left = 100.0
+expand_margin_top = 10.0
+expand_margin_right = 10.0
+expand_margin_bottom = 10.0
+
+[sub_resource type="Theme" id="Theme_jkdf5"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k12tt"]
+bg_color = Color(0.30980393, 0.30980393, 0.30980393, 0.8784314)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.7254902, 0.7254902, 0.7254902, 1)
+border_blend = true
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
 [node name="main" type="Node2D" unique_id=522453875]
 metadata/_edit_lock_ = true
 
@@ -200,35 +258,102 @@ texture = ExtResource("1_bo1nx")
 metadata/_edit_lock_ = true
 
 [node name="PatientDog" type="Sprite2D" parent="." unique_id=140973489]
-position = Vector2(699, 393)
-scale = Vector2(0.5419192, 0.5555556)
+position = Vector2(687, 393)
+scale = Vector2(0.51344705, 0.53518516)
 texture = ExtResource("2_bo1nx")
 metadata/_edit_lock_ = true
 
 [node name="UI" type="CanvasLayer" parent="." unique_id=749731248]
 
-[node name="PatientInfos" type="Panel" parent="UI" unique_id=1622764739]
+[node name="Emergancy" type="Panel" parent="UI" unique_id=1825975239]
+offset_left = 15.0
+offset_top = 141.0
+offset_right = 345.0
+offset_bottom = 201.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_jkdf5")
+
+[node name="EmergencyLabel" type="Label" parent="UI/Emergancy" unique_id=1117362768]
+layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.28
-anchor_top = 0.117000006
-anchor_right = 0.28
-anchor_bottom = 0.117000006
-offset_left = -370.28
-offset_top = -72.856
-offset_right = 369.72
-offset_bottom = 72.144
+anchor_left = 0.61200005
+anchor_top = 0.5
+anchor_right = 0.61200005
+anchor_bottom = 0.5
+offset_left = -90.96002
+offset_top = -12.5
+offset_right = 51.039978
+offset_bottom = 12.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "EMERGANCY GDV!"
+label_settings = SubResource("LabelSettings_fdnlq")
+metadata/_edit_use_anchors_ = true
+metadata/_edit_lock_ = true
+
+[node name="+Label" type="Label" parent="UI/Emergancy" unique_id=1127931764]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.26093942
+anchor_top = 0.5
+anchor_right = 0.26093942
+anchor_bottom = 0.5
+offset_left = -6.6100082
+offset_top = -26.5
+offset_right = 6.3899918
+offset_bottom = 22.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "+"
+label_settings = SubResource("LabelSettings_jkdf5")
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+metadata/_edit_lock_ = true
+
+[node name="TopBar" type="Panel" parent="UI" unique_id=1622764739]
+anchors_preset = -1
+anchor_left = 0.263
+anchor_top = 0.104
+anchor_right = 0.263
+anchor_bottom = 0.104
+offset_left = -346.888
+offset_top = -64.872
+offset_right = 346.112
+offset_bottom = 65.128
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
 theme_override_styles/panel = SubResource("StyleBoxFlat_hptm8")
 metadata/_edit_use_anchors_ = true
 
-[node name="NameLabel" type="Label" parent="UI/PatientInfos" unique_id=855131342]
+[node name="Portrait" type="TextureRect" parent="UI/TopBar" unique_id=1134309116]
+custom_minimum_size = Vector2(60, 60)
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.42400002
+anchor_left = 0.095000006
+anchor_top = 0.485
+anchor_right = 0.095000006
+anchor_bottom = 0.485
+offset_left = -51.835007
+offset_top = -51.050003
+offset_right = 52.320984
+offset_bottom = 50.977997
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+size_flags_stretch_ratio = 0.0
+texture = ExtResource("6_21xkr")
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+metadata/_edit_lock_ = true
+
+[node name="NameLabel" type="Label" parent="UI/TopBar" unique_id=855131342]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.41101304
 anchor_top = 0.279
-anchor_right = 0.42400002
+anchor_right = 0.41101304
 anchor_bottom = 0.279
 offset_left = -33.768707
 offset_top = -15.944
@@ -244,27 +369,28 @@ label_settings = SubResource("LabelSettings_344ge")
 metadata/_edit_use_anchors_ = true
 metadata/_edit_lock_ = true
 
-[node name="Name" type="Label" parent="UI/PatientInfos/NameLabel" unique_id=1129137081]
+[node name="Name" type="Label" parent="UI/TopBar/NameLabel" unique_id=1129137081]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = -1.4120001
-anchor_top = 0.531
-anchor_right = -1.4120001
-anchor_bottom = 0.531
-offset_left = -33.983994
-offset_top = -14.992001
-offset_right = 28.016006
-offset_bottom = 17.008
+anchor_left = -1.3677647
+anchor_top = 0.56200004
+anchor_right = -1.3677647
+anchor_bottom = 0.56200004
+offset_left = -30.991997
+offset_top = -15.984001
+offset_right = 31.008003
+offset_bottom = 16.015999
 text = "Name:"
 label_settings = SubResource("LabelSettings_6bp64")
 metadata/_edit_use_anchors_ = true
+metadata/_edit_lock_ = true
 
-[node name="AgeLabel" type="Label" parent="UI/PatientInfos" unique_id=124171440]
+[node name="AgeLabel" type="Label" parent="UI/TopBar" unique_id=124171440]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.52000004
+anchor_left = 0.5156711
 anchor_top = 0.69500005
-anchor_right = 0.52000004
+anchor_right = 0.5156711
 anchor_bottom = 0.69500005
 offset_left = -105.84985
 offset_top = -15.963997
@@ -277,35 +403,36 @@ label_settings = SubResource("LabelSettings_ynf5e")
 metadata/_edit_use_anchors_ = true
 metadata/_edit_lock_ = true
 
-[node name="Age" type="Label" parent="UI/PatientInfos/AgeLabel" unique_id=959301803]
+[node name="Age" type="Label" parent="UI/TopBar/AgeLabel" unique_id=959301803]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = -0.5045689
-anchor_top = 0.480263
-anchor_right = -0.5045689
-anchor_bottom = 0.480263
-offset_left = -23.535965
-offset_top = -13.368423
-offset_right = 23.464035
-offset_bottom = 18.631577
+anchor_left = -0.490782
+anchor_top = 0.59325004
+anchor_right = -0.490782
+anchor_bottom = 0.59325004
+offset_left = -23.445
+offset_top = -15.984009
+offset_right = 23.555
+offset_bottom = 16.015991
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
 text = "Age:"
 label_settings = SubResource("LabelSettings_d1ilt")
 metadata/_edit_use_anchors_ = true
+metadata/_edit_lock_ = true
 
-[node name="SymptomsLabel" type="Label" parent="UI/PatientInfos" unique_id=1310608808]
+[node name="SymptomsLabel" type="Label" parent="UI/TopBar" unique_id=1310608808]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.666
-anchor_top = 0.48700002
-anchor_right = 0.666
-anchor_bottom = 0.48700002
+anchor_left = 0.67177194
+anchor_top = 0.5
+anchor_right = 0.671772
+anchor_bottom = 0.5
 offset_left = -215.52399
-offset_top = -16.007114
+offset_top = -17.697113
 offset_right = 215.47598
-offset_bottom = 15.992897
+offset_bottom = 14.302902
 grow_horizontal = 2
 grow_vertical = 2
 text = "Vomiting, Distended, Abdomen, Lethargy"
@@ -313,43 +440,21 @@ label_settings = SubResource("LabelSettings_hptm8")
 metadata/_edit_use_anchors_ = true
 metadata/_edit_lock_ = true
 
-[node name="Symptoms" type="Label" parent="UI/PatientInfos/SymptomsLabel" unique_id=1537022878]
+[node name="Symptoms" type="Label" parent="UI/TopBar/SymptomsLabel" unique_id=1537022878]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = -0.16600001
-anchor_top = 0.5
-anchor_right = -0.16600001
-anchor_bottom = 0.5
-offset_left = -57.453995
-offset_top = -14.000002
-offset_right = 53.546005
-offset_bottom = 18.000002
+anchor_left = -0.15928075
+anchor_top = 0.56200004
+anchor_right = -0.15928075
+anchor_bottom = 0.56200004
+offset_left = -55.35
+offset_top = -15.984003
+offset_right = 55.65
+offset_bottom = 16.015999
 grow_horizontal = 2
 grow_vertical = 2
 text = "Symptoms:"
 label_settings = SubResource("LabelSettings_6iyac")
-metadata/_edit_use_anchors_ = true
-
-[node name="Portrait" type="TextureRect" parent="UI/PatientInfos" unique_id=1134309116]
-custom_minimum_size = Vector2(60, 60)
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.108
-anchor_top = 0.5
-anchor_right = 0.108
-anchor_bottom = 0.5
-offset_left = -60.0
-offset_top = -55.028
-offset_right = 60.0
-offset_bottom = 56.972
-grow_horizontal = 2
-grow_vertical = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-size_flags_stretch_ratio = 0.0
-texture = ExtResource("6_21xkr")
-expand_mode = 1
-stretch_mode = 5
 metadata/_edit_use_anchors_ = true
 metadata/_edit_lock_ = true
 
@@ -359,10 +464,10 @@ anchor_left = 0.57000005
 anchor_top = 0.88400006
 anchor_right = 0.57000005
 anchor_bottom = 0.88400006
-offset_left = -75.32007
-offset_top = -29.912048
-offset_right = 74.67993
-offset_bottom = 30.087952
+offset_left = -771.32007
+offset_top = -47.91205
+offset_right = -621.32007
+offset_bottom = 7.0879517
 theme = SubResource("Theme_bo1nx")
 theme_override_colors/font_color = Color(0.875, 0.875, 0.875, 1)
 theme_override_colors/font_focus_color = Color(0.8517688, 0.8517689, 0.8517693, 1)
@@ -372,7 +477,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_8gbba")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_21xkr")
 theme_override_styles/hover = ExtResource("5_344ge")
 text = "HISTORY"
-metadata/_edit_use_anchors_ = true
+metadata/_edit_lock_ = true
 
 [node name="ExamButton" type="Button" parent="UI" unique_id=1180044727]
 anchors_preset = -1
@@ -380,10 +485,12 @@ anchor_left = 0.68700004
 anchor_top = 0.88400006
 anchor_right = 0.68700004
 anchor_bottom = 0.88400006
-offset_left = -75.31207
-offset_top = -29.912048
-offset_right = 74.68793
-offset_bottom = 30.087952
+offset_left = -771.3121
+offset_top = -47.91205
+offset_right = -621.3121
+offset_bottom = 7.0879517
+grow_horizontal = 2
+grow_vertical = 2
 theme = SubResource("Theme_bo1nx")
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("3_6bp64")
@@ -392,7 +499,7 @@ theme_override_styles/normal = ExtResource("4_jjvhh")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_kry3j")
 theme_override_styles/hover = SubResource("StyleBoxFlat_6iyac")
 text = "EXAM"
-metadata/_edit_use_anchors_ = true
+metadata/_edit_lock_ = true
 
 [node name="DiagnosticsButton" type="Button" parent="UI" unique_id=1674663872]
 anchors_preset = -1
@@ -400,10 +507,10 @@ anchor_left = 0.804
 anchor_top = 0.88400006
 anchor_right = 0.804
 anchor_bottom = 0.88400006
-offset_left = -75.30408
-offset_top = -29.912048
-offset_right = 74.69592
-offset_bottom = 30.087952
+offset_left = -771.3041
+offset_top = -47.91205
+offset_right = -621.3041
+offset_bottom = 7.0879517
 theme = SubResource("Theme_bo1nx")
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("3_6bp64")
@@ -412,7 +519,7 @@ theme_override_styles/normal = ExtResource("4_kry3j")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_6bp64")
 theme_override_styles/hover = SubResource("StyleBoxFlat_d1ilt")
 text = "DIAGNOSTICS"
-metadata/_edit_use_anchors_ = true
+metadata/_edit_lock_ = true
 
 [node name="TreatmentButton" type="Button" parent="UI" unique_id=41395588]
 anchors_preset = -1
@@ -420,10 +527,10 @@ anchor_left = 0.92200005
 anchor_top = 0.88400006
 anchor_right = 0.92200005
 anchor_bottom = 0.88400006
-offset_left = -75.67212
-offset_top = -29.912048
-offset_right = 74.32788
-offset_bottom = 30.087952
+offset_left = -771.6721
+offset_top = -47.91205
+offset_right = -621.6721
+offset_bottom = 7.0879517
 theme = SubResource("Theme_bo1nx")
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("3_6bp64")
@@ -432,4 +539,177 @@ theme_override_styles/normal = ExtResource("5_kry3j")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_344ge")
 theme_override_styles/hover = SubResource("StyleBoxFlat_ynf5e")
 text = "TREATMENT"
+metadata/_edit_lock_ = true
+
+[node name="BottomBar" type="Panel" parent="UI" unique_id=522260424]
+z_index = -1
+offset_left = 12.0
+offset_top = 697.0
+offset_right = 659.0
+offset_bottom = 758.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_wsu2k")
+metadata/_edit_lock_ = true
+
+[node name="SabilityLabel" type="Label" parent="UI/BottomBar" unique_id=1651007253]
+z_index = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.086
+anchor_top = 0.5
+anchor_right = 0.086
+anchor_bottom = 0.5
+offset_left = -35.642006
+offset_top = -14.5
+offset_right = 35.357998
+offset_bottom = 14.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.9490196, 0.74509805, 0.2627451, 1)
+theme_override_fonts/font = ExtResource("3_6bp64")
+theme_override_font_sizes/font_size = 18
+theme_override_styles/normal = SubResource("StyleBoxTexture_344ge")
+text = "Stability"
+metadata/_edit_use_anchors_ = true
+metadata/_edit_lock_ = true
+
+[node name="StabilityFrame" type="PanelContainer" parent="UI/BottomBar" unique_id=472450621]
+layout_mode = 0
+offset_left = 100.0
+offset_top = 12.0
+offset_right = 637.0
+offset_bottom = 49.0
+size_flags_stretch_ratio = 0.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_fdnlq")
+metadata/_edit_lock_ = true
+
+[node name="StabilityBar" type="HBoxContainer" parent="UI/BottomBar/StabilityFrame" unique_id=574654578]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+size_flags_stretch_ratio = 0.0
+theme = SubResource("Theme_jkdf5")
+theme_override_constants/separation = 1
+metadata/_edit_group_ = true
+
+[node name="Segement" type="ColorRect" parent="UI/BottomBar/StabilityFrame/StabilityBar" unique_id=1793280322]
+custom_minimum_size = Vector2(52, 0)
+layout_mode = 2
+size_flags_stretch_ratio = 0.0
+theme = SubResource("Theme_jkdf5")
+color = Color(0.9490196, 0.74509805, 0.2627451, 1)
+
+[node name="Segement2" type="ColorRect" parent="UI/BottomBar/StabilityFrame/StabilityBar" unique_id=772652055]
+custom_minimum_size = Vector2(52, 0)
+layout_mode = 2
+size_flags_stretch_ratio = 0.0
+theme = SubResource("Theme_jkdf5")
+color = Color(0.9490196, 0.74509805, 0.2627451, 1)
+
+[node name="Segement3" type="ColorRect" parent="UI/BottomBar/StabilityFrame/StabilityBar" unique_id=1656925238]
+custom_minimum_size = Vector2(52, 0)
+layout_mode = 2
+size_flags_stretch_ratio = 0.0
+theme = SubResource("Theme_jkdf5")
+color = Color(0.99999934, 0.27995017, 0.14593863, 1)
+
+[node name="Segement4" type="ColorRect" parent="UI/BottomBar/StabilityFrame/StabilityBar" unique_id=1860786107]
+custom_minimum_size = Vector2(52, 0)
+layout_mode = 2
+size_flags_stretch_ratio = 0.0
+theme = SubResource("Theme_jkdf5")
+color = Color(0.99999934, 0.27995017, 0.14593863, 1)
+
+[node name="Segement5" type="ColorRect" parent="UI/BottomBar/StabilityFrame/StabilityBar" unique_id=295271188]
+custom_minimum_size = Vector2(52, 0)
+layout_mode = 2
+size_flags_stretch_ratio = 0.0
+theme = SubResource("Theme_jkdf5")
+color = Color(0.99999934, 0.27995017, 0.14593863, 1)
+
+[node name="Segement6" type="ColorRect" parent="UI/BottomBar/StabilityFrame/StabilityBar" unique_id=918480417]
+custom_minimum_size = Vector2(52, 0)
+layout_mode = 2
+size_flags_stretch_ratio = 0.0
+theme = SubResource("Theme_jkdf5")
+color = Color(0.99999934, 0.27995017, 0.14593863, 1)
+
+[node name="Segement7" type="ColorRect" parent="UI/BottomBar/StabilityFrame/StabilityBar" unique_id=1903434180]
+custom_minimum_size = Vector2(52, 0)
+layout_mode = 2
+size_flags_stretch_ratio = 0.0
+theme = SubResource("Theme_jkdf5")
+color = Color(0.99999934, 0.27995017, 0.14593863, 1)
+
+[node name="Segement8" type="ColorRect" parent="UI/BottomBar/StabilityFrame/StabilityBar" unique_id=1755516582]
+custom_minimum_size = Vector2(52, 0)
+layout_mode = 2
+size_flags_stretch_ratio = 0.0
+theme = SubResource("Theme_jkdf5")
+color = Color(0.46120948, 0.15329501, 0.10996375, 1)
+
+[node name="Segement9" type="ColorRect" parent="UI/BottomBar/StabilityFrame/StabilityBar" unique_id=821648014]
+custom_minimum_size = Vector2(52, 0)
+layout_mode = 2
+size_flags_stretch_ratio = 0.0
+theme = SubResource("Theme_jkdf5")
+color = Color(0.46120948, 0.15329501, 0.10996375, 1)
+
+[node name="Segemenet10" type="ColorRect" parent="UI/BottomBar/StabilityFrame/StabilityBar" unique_id=1112330042]
+custom_minimum_size = Vector2(52, 0)
+layout_mode = 2
+size_flags_stretch_ratio = 0.0
+theme = SubResource("Theme_jkdf5")
+color = Color(0.89735097, 0, 0.0664651, 1)
+
+[node name="ScorePanel" type="Panel" parent="UI/BottomBar" unique_id=958209196]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.136
+anchor_top = 0.51600003
+anchor_right = 1.136
+anchor_bottom = 0.51600003
+offset_left = -77.99219
+offset_top = -28.476002
+offset_right = 78.00818
+offset_bottom = 28.523998
+theme_override_styles/panel = SubResource("StyleBoxFlat_k12tt")
+metadata/_edit_use_anchors_ = true
+
+[node name="Score" type="Label" parent="UI/BottomBar/ScorePanel" unique_id=1464527403]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.32360983
+anchor_top = 0.5
+anchor_right = 0.3236098
+anchor_bottom = 0.5
+offset_left = -31.057224
+offset_top = -14.5
+offset_right = 31.103504
+offset_bottom = 13.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_6bp64")
+theme_override_font_sizes/font_size = 21
+text = "SCORE:"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Value" type="Label" parent="UI/BottomBar/ScorePanel" unique_id=874184796]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.77400005
+anchor_top = 0.48236847
+anchor_right = 0.77400005
+anchor_bottom = 0.48236847
+offset_left = -24.53357
+offset_top = -15.995001
+offset_right = 24.46643
+offset_bottom = 16.004997
+theme_override_colors/font_shadow_color = Color(0, 0.4627451, 0.7764706, 0.7529412)
+theme_override_fonts/font = ExtResource("3_6bp64")
+theme_override_font_sizes/font_size = 21
+text = "N/A"
+horizontal_alignment = 1
+vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
