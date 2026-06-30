@@ -25,11 +25,23 @@ func _on_history_button_pressed() -> void:
 		# 2. Automatically turn off visibility completely once the animation finishes
 		tween.tween_callback(func(): medical_report.visible = false)
 
+@onready var timer_label = $UI/TopContainer/Control/Timer/TimerLabel
 
-func _on_close_button_pressed() -> void:
-	if $UI/MedicalReport.visible:
-		$UI/MedicalReport.visible = false
+var time_left := 601.0
 
+func _process(delta: float) -> void:
+
+	time_left -= delta
+	time_left = max(time_left, 0.0)
+
+	var total_seconds: int = int(time_left)
+	var minutes: int = int(total_seconds / 60.0) 
+	var seconds: int = total_seconds % 60
+
+	timer_label.text = "Time: " + "%d:%02d" % [minutes, seconds]
+	if time_left <= 120.0:
+
+		timer_label.add_theme_color_override("font_color", Color.RED)
 
 
 func _on_exam_button_pressed() -> void:

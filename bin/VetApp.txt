@@ -1,0 +1,39 @@
+Vet App Summary From Claude:
+
+**Context:** Continuing from yesterday's scene (room background + dog + buttons). Today's focus: building out the `PatientInfo` UI panel — adding a circular dog portrait, fonts, and fixing layout/positioning issues.
+
+**What happened:**
+1. Added a circular profile picture of the dog — went through Krita (frustrating, abandoned), succeeded using **PicsArt** on phone, exported a clean circular portrait with colored ring + yellow background.
+2. Imported the circular PNG into Godot as a `TextureRect` inside `PatientInfo`.
+3. Hit a sizing bug — `TextureRect` rendered at full native resolution covering the whole screen. Fixed by adjusting **Expand Mode** (Adem solved this independently).
+4. Tried to manually reposition `NameLabel` — blocked because it was nested inside a `VBoxContainer`, which auto-manages child positions and disables manual dragging.
+5. Decided to pull labels and `TextureRect` out of the VBoxContainer to be direct children of `PatientInreacts`/`PatientInfo` (renamed/restructured slightly — current naming has `PatientInreacts` as parent, `PatientInfos` nested inside it) so they can be freely/manually positioned instead of auto-stacked.
+6. Added a custom font (bold, rounded style) to the labels — looks good, but font size is currently way too large, causing labels to overflow and the panel to stretch oversized.
+7. Current visible bug: `TextureRect` (dog portrait) is rendering outside/below the visible blue `PatientInfo` panel instead of inside it, and the panel itself has grown too large due to oversized label text.
+8. Clarified goal: the entire `PatientInfo` layout should be a **fixed, locked template** — positions/sizes set once, only text content and patient image change per patient at runtime. Labels should never reposition or resize based on content.
+
+**Current Scene Tree:**
+```
+main (Node2D)
+├── ExaminationRoom (Sprite2D)
+├── PatientDog (Sprite2D)
+└── UI (CanvasLayer)
+    ├── PatientInreacts (Panel)
+    │   └── PatientInfos (was VBoxContainer, being emptied out)
+    │       ├── NameLabel (Label)
+    │       ├── AgeLabel (Label)
+    │       ├── SymptomsLabel (Label)
+    │       └── TextureRect (dog circular portrait)
+    ├── HistoryButton (Button)
+    ├── ExamButton (Button)
+    ├── DiagnosticsButton (Button)
+    └── TreatmentButton (Button)
+```
+*(Note: `HistoryButton` etc. appear to no longer be grouped under a `HBoxContainer` named `ActionButtons` per the latest screenshot — worth confirming/re-checking node structure at start of next session.)*
+
+**Immediate next steps (in progress, unfinished):**
+1. Reduce **Font Size** (Theme Overrides → Font Sizes) on `NameLabel`, `AgeLabel`, `SymptomsLabel` — currently oversized, causing panel overflow. Target ~14-16px.
+2. Move `TextureRect` and all 3 Labels to be **direct children of `PatientInfo`/`PatientInreacts`** (a plain Panel, not a Container) — confirm this is fully done, since current screenshot still showed `TextureRect` floating outside the visible panel bounds.
+3. For each element (TextureRect + 3 Labels): set **Anchors Preset → Top Left**, then set fixed explicit **Position** and **Size** values by eye, so the layout is locked once and never shifts regardless of patient data.
+4. Once locked, code will only update `.text` properties and the portrait texture per patient — never touch position/size at runtime.
+5. After this panel is finalized: build the `XrayPopup` panel (previously planned, not yet started) and wire the `DiagnosticsButton.pressed()` signal to toggle its visibility.

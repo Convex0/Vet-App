@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ran3mvdx7f86"
-path="res://.godot/imported/Screenshot From 2026-06-29 20-10-25.png-68ca20ec6472f3ba8443b33784a9df18.ctex"
+uid="uid://dkmbdh07p4qhc"
+path="res://.godot/imported/Clipboard.png-5042c79c82a495c16c55e46bff612b78.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Screenshot From 2026-06-29 20-10-25.png"
-dest_files=["res://.godot/imported/Screenshot From 2026-06-29 20-10-25.png-68ca20ec6472f3ba8443b33784a9df18.ctex"]
+source_file="res://Assets/Clipboard.png"
+dest_files=["res://.godot/imported/Clipboard.png-5042c79c82a495c16c55e46bff612b78.ctex"]
 
 [params]
 
