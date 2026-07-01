@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://npyuc6dix2lb"
-path="res://.godot/imported/DogProfile.png-8bbe72503d22b076e0b7abb887214563.ctex"
+uid="uid://des7xcoop1tut"
+path="res://.godot/imported/PatientCatPortrait.png-61dee07da1a913fdd2465b95bb3ff50c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/DogProfile.png"
-dest_files=["res://.godot/imported/DogProfile.png-8bbe72503d22b076e0b7abb887214563.ctex"]
+source_file="res://Assets/PatientCatPortrait.png"
+dest_files=["res://.godot/imported/PatientCatPortrait.png-61dee07da1a913fdd2465b95bb3ff50c.ctex"]
 
 [params]
 

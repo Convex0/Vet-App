@@ -17,7 +17,7 @@ if ! git commit -m "$msg"; then
 fi
 
 if git push origin "$branch"; then
-    echo "Done ✅"
+    echo "Done 🥰"
 else
     echo "Failed ❌"
     exit 1

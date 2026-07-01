@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ba28va1awpyg"
-path="res://.godot/imported/Picsart_26-07-01_00-03-09-572.png-4fe891dad752fb2dd5d8ace69b23a63c.ctex"
+uid="uid://bqh7hb82sotrx"
+path="res://.godot/imported/PatientDogPortrait.png-f6a6c24d35ff1edf739cc0d6c8aadd9c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Picsart_26-07-01_00-03-09-572.png"
-dest_files=["res://.godot/imported/Picsart_26-07-01_00-03-09-572.png-4fe891dad752fb2dd5d8ace69b23a63c.ctex"]
+source_file="res://Assets/PatientDogPortrait.png"
+dest_files=["res://.godot/imported/PatientDogPortrait.png-f6a6c24d35ff1edf739cc0d6c8aadd9c.ctex"]
 
 [params]
 
