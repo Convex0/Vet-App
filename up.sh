@@ -18,6 +18,7 @@ fi
 
 if git push origin "$branch"; then
     echo "Done 🥰"
+     python heart.py
 else
     echo "Failed ❌"
     exit 1
